@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:id="@+id/cardviewgenre"
+    android:layout_marginLeft="8dp"
+    app:cardElevation="10dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="257dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark_disabled"
+            android:id="@+id/imagecover"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/artstnameId" />
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/likeid"
+            android:numStars="1"
+            android:layout_marginLeft="40dp"
+            android:stepSize="1"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Comments: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:id="@+id/numcomid"
+            android:layout_above="@+id/likeid"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Hits: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:id="@+id/hitsid"
+            android:layout_above="@+id/numcomid"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/songhereid"
+            android:lines="2"
+            android:text=" "
+            android:textSize="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/hitsid"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text=" "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/artstnameId"
+            android:layout_above="@+id/songhereid"
+            android:layout_alignEnd="@+id/songhereid" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
